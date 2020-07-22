@@ -1,38 +1,155 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montseratt', sans-serif;
+  /* background-color: black; */
+}
+.container{
+  height: 100px;
+  width: 40%;
+  margin: auto;
+  border-radius: 70%;
+  box-shadow: 12px 12px 12px 12px rgba(245, 245, 245, 0.151);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+}
+
+.app {
+  background-image: url('./cold-weather-boy.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease;
+  
+}
+
+.app.warm {
+  background-image: url('./warm1.jpg');
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+}
+main h1{
+  font-size: 40px;
+  /* font-family:fantasy; */
+  font-family: 'Lobster', cursive;
+  text-emphasis: 4px;
+  text-align: center;
+  color:rgb(95, 44, 44)
+  
+}
+main span{
+  display: block;
+  text-align: center;
+  /* margin: auto; */
+  font-size: 10px;
+  color: aliceblue;
+}
+
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+  margin-top: 15px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 16px 16px 16px;
+  /* margin-top: -25px; */
+
+  /* box-shadow: 5px 5px rgba(0, 0, 0, 0.2); */
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  border-radius: 16px;
+  width: 50%;
+
+  padding: 15px 25px;
+
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  /* box-shadow: 3px 6px rgba(0, 0, 0, 0.2); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
+.weather{
+  position: relative;
+  display: block;
+  margin: 30px auto;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  border-radius: 16px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  padding: 15px 25px;
 
-.App-link {
-  color: #61dafb;
-}
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  width: 50%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  /* box-shadow: 3px 6px rgba(0, 0, 0, 0.2); */
 }
