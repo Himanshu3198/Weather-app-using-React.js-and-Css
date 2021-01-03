@@ -153,3 +153,45 @@ main span{
   text-align: center;
   /* box-shadow: 3px 6px rgba(0, 0, 0, 0.2); */
 }
+
+@media only screen and (max-width: 600px) {
+ .container{
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  border-radius: 70%;
+  box-shadow: 12px 12px 12px 12px rgba(245, 245, 245, 0.151);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+}
+  main h1{
+  font-size: 30px;
+  /* font-family:fantasy; */
+  font-family: 'Lobster', cursive;
+  text-emphasis: 4px;
+  text-align: center;
+  color:rgb(95, 44, 44)
+  
+}
+  .weather{
+  position: relative;
+  display: block;
+  margin: 30px auto;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  border-radius: 16px;
+
+  padding: 15px 25px;
+
+  color: #FFF;
+  font-size: 90px;
+  font-weight: 900;
+  width: 50%;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  /* box-shadow: 3px 6px rgba(0, 0, 0, 0.2); */
+}
+  
+  
+}
