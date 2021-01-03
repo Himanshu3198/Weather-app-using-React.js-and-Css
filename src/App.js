@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="container">
       <div className={(typeof weather.main != "undefined") ?
-        ((weather.main.temp > 20) ? 'app warm' : 'app') : 'app'}>
+        ((weather.main.temp > 20) ? 'app.warm' : 'app') : 'app'}>
         <main>
           <h1>Mausam App</h1>
           <span>Know your city weather quickly!</span>
