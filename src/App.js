@@ -37,7 +37,7 @@ function App() {
       <div className={(typeof weather.main != "undefined") ?
         ((weather.main.temp > 20) ? 'app warm' : 'app') : 'app'}>
         <main>
-          <h1>Mausam App By Himanshu Sharma</h1>
+          <h1>Mausam App</h1>
           <span>Know your city weather quickly!</span>
           <div className="search-box">
             <input
