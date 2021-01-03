@@ -193,17 +193,18 @@ main span{
   /* box-shadow: 3px 6px rgba(0, 0, 0, 0.2); */
 }
   .weather-box .temp {
+    text-align:center;
   position: relative;
   display: inline-block;
-  margin: 30px auto;
+  margin: 25px auto;
   /* background-color: rgba(255, 255, 255, 0.2); */
   border-radius: 16px;
-  width: 45%;
+  width: 42%;
 
-  padding: 15px 25px;
+  padding: 12px 22px;
 
   color: #FFF;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 800;
 
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
